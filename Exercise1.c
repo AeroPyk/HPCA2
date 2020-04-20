@@ -5,12 +5,18 @@ int main() {
 
     printf("Amount of thread at THIS time: %d\n", omp_get_num_threads());
 
-#pragma omp parallel
+    int id;
+
+    // using "shared" and "default(none)" seems good practice since my compiler was showing some warning
+    #pragma omp parallel shared(id) default(none)// private(id)
     {
         printf("Amount of thread NOW: %d\n", omp_get_num_threads());
-        int ID = omp_get_thread_num();
-        printf("hello(%d) ", ID);
-        printf("world(%d)\n", ID);
+
+        id = omp_get_thread_num();
+        // usleep(id); // We can try to mess up with the threads by sleeping a different time for each thread
+        printf("hello(%d) ", id);
+
+        printf("world(%d)\n", id);
     };
 
     printf("Amount of thread at the end: %d\n", omp_get_num_threads());
