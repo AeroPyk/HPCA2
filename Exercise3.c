@@ -3,6 +3,7 @@
 #include <omp.h>
 #include <time.h>
 #include <sys/time.h>
+#include <unistd.h>
 
 #define N 1000000
 #define T 30
@@ -56,6 +57,8 @@ int main() {
     printf("\n");
 
     for (int k = 0; k < T; k++) {
+
+        usleep(20000); // Let some temporal space between tries (20ms) in case the system is busy or something
 
         srand((unsigned int) mysecond()*1000); // seed
         for (int i = 0; i < N; i++) {
