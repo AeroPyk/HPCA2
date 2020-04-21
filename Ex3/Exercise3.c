@@ -58,7 +58,7 @@ int main() {
 
     for (int k = 0; k < T; k++) {
 
-        usleep(20000); // Let some temporal space between tries (20ms) in case the system is busy or something
+        usleep(2000); // Let some temporal space between tries (20ms) in case the system is busy or something
 
         srand((unsigned int) mysecond()*1000); // seed
         for (int i = 0; i < N; i++) {
@@ -99,7 +99,7 @@ int main() {
         #pragma omp parallel for shared(x, maxval, maxloc) default(none)
             // This should be way more slow than before
             for (int i = 0; i < N; i++) {
-                if (x[i] > maxval[2]) // This if statement avoid staying blocked waiting for the critical part to be free
+                // if (x[i] > maxval[2]) // This if statement avoid staying blocked waiting for the critical part to be free
                 // Indeed if x[i] is lower than the maximum, it doesn't need to modify the maximum
                 // Therefore we don't wait if we already know that we don't need to rewrite the maximum and this improve by quite a lot
                 {

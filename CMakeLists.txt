@@ -5,5 +5,6 @@ set(CMAKE_C_FLAGS -fopenmp)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(Ex1 Exercise1.c)
-add_executable(Ex2 stream.c)
-add_executable(Ex3 Exercise3.c)
+add_executable(Ex2 Ex2/stream.c)
+add_executable(Ex3 Ex3/Exercise3.c)
+add_executable(Ex4 Ex4/DFTW_parallel.c)

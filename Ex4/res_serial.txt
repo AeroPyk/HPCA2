@@ -1,0 +1,3 @@
+DFTW calculation with N = 8000 
+DFTW computation in 3.444300 seconds
+Xre[0] = 8000.000000 
