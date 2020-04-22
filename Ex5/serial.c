@@ -7,7 +7,7 @@
 #define DELTA_T 0.05
 #define CYC 100
 #define DIM 2
-#define G 6.6742e-4 // instead of e-11
+#define G 6.6742e-5 // instead of e-11
 // Have to put a higher.
 // It's either that or we get masses way higher because this force is mostly applicable to big object
 
@@ -70,7 +70,7 @@ int main(){
 
     run_time = omp_get_wtime() - start_time;
 
-    printBodies();
+    // printBodies();
     printf("Run time reduced: %f\n", run_time);
 
     doubleCheck();
@@ -224,7 +224,6 @@ void doubleCheck(){
 
     double eps = 0.0001;
 
-#pragma omp parallel for
     for (int q = 0; q < 10; ++q) {
         for (int d = 0; d < DIM; ++d) {
             if (fabs(old_res[q][d] - pos[q][d]) > eps) printf("Error:%f!=%f [%d][%d]\n", old_res[q][d], pos[q][d], q, d);

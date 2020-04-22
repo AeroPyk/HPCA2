@@ -1,0 +1,10 @@
+Parallel version,#Thread,32,Simple,Reduced,2.778203,2.846310
+
+Parallel version,#Thread,32,Simple,Reduced,2.852049,2.880298
+
+Parallel version,#Thread,32,Simple,Reduced,2.871479,2.914795
+
+Parallel version,#Thread,32,Simple,Reduced,3.054065,2.748298
+
+Parallel version,#Thread,32,Simple,Reduced,3.100339,2.708557
+

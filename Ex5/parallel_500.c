@@ -256,7 +256,7 @@ void printBodies(){
     }
     printf("mass\n");
 
-    for (int q = 0; q < __min(N,5); ++q) {
+    for (int q = 0; q < 5; ++q) {
         printf("%d,", q);
         for (int d = 0; d < DIM; ++d) {
             printf("%f,", pos[q][d]);

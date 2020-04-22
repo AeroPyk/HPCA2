@@ -3,7 +3,7 @@
 #include <math.h>
 #include <omp.h>
 
-#define N 500 // number of particle
+#define N 1000 // number of particle
 #define DELTA_T 0.05
 #define CYC 100
 #define DIM 2
@@ -256,7 +256,7 @@ void printBodies(){
     }
     printf("mass\n");
 
-    for (int q = 0; q < __min(N,5); ++q) {
+    for (int q = 0; q < 5; ++q) {
         printf("%d,", q);
         for (int d = 0; d < DIM; ++d) {
             printf("%f,", pos[q][d]);

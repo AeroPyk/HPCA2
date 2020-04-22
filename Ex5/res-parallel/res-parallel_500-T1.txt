@@ -1,0 +1,16 @@
+Parallel version,#Thread,1,Simple,Reduced,1.566855,0.873173
+
+Parallel version,#Thread,1,Simple,Reduced,1.647852,0.871773
+
+Parallel version,#Thread,1,Simple,Reduced,1.703651,0.868247
+
+Parallel version,#Thread,1,Simple,Reduced,1.728759,0.866415
+
+Parallel version,#Thread,1,Simple,Reduced,1.730720,0.881202
+
+Parallel version,#Thread,1,Simple,Reduced,1.732358,0.881290
+
+Parallel version,#Thread,1,Simple,Reduced,1.732452,0.881250
+
+Parallel version,#Thread,1,Simple,Reduced,1.732489,0.881309
+
