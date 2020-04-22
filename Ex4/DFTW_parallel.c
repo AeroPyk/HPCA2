@@ -90,10 +90,14 @@
 	  for (int k=0 ; k<N ; k++)
 	    {
 	        for (int n=0 ; n<N ; n++)  {
+	            // Divide the time by 2
+	            double s = sin(n * k * PI2 / N);
+	            double c = cos(n * k * PI2 / N);
+
 	        	// Real part of X[k]
-	            Xr_o[k] += xr[n] * cos(n * k * PI2 / N) + idft*xi[n]*sin(n * k * PI2 / N);
+	            Xr_o[k] += xr[n] * c + idft*xi[n]*s;
 	            // Imaginary part of X[k]
-	            Xi_o[k] += -idft*xr[n] * sin(n * k * PI2 / N) + xi[n] * cos(n * k * PI2 / N);
+	            Xi_o[k] += -idft*xr[n] * s + xi[n] * c;
 	            
 	        } 
 	    }

@@ -1,0 +1,12 @@
+Serial version
+Run time simple: 5.862827
+Run time reduced: 3.031051
+Serial version
+Run time simple: 5.889502
+Run time reduced: 3.030285
+Serial version
+Run time simple: 5.902340
+Run time reduced: 3.043506
+Serial version
+Run time simple: 5.899085
+Run time reduced: 3.043579
