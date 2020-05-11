@@ -74,7 +74,7 @@ int main(){
     run_time = omp_get_wtime() - start_time;
 
     // printBodies();
-    printf("%f\n\n", run_time);
+    printf("%f\n", run_time);
 
     // This is sadly not really reliable since both methods calculate slight different values that make them diverge from one another
     // as much as there're cycles.
@@ -116,7 +116,7 @@ void rA(){
         }
     }
 
-#pragma omp parallel for
+#pragma omp parallel for schedule(dynamic)
     for(int q=0; q < N; q++) reducedAlgo(q);
 }
 void sA(){

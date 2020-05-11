@@ -1,7 +1,7 @@
 #!/bin/bash
 
 module swap PrgEnv-cray PrgEnv-gnu
-cc stream_dynamic.c -o stream_dynamic.out -fopenmp
+cc stream_dynamic.c -O2 -o stream_dynamic.out -fopenmp
 
 export OMP_NUM_THREADS=32
 srun -n 5 ./stream_dynamic.out > res32_dynamic.txt

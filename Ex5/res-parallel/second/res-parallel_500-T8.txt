@@ -1,0 +1,8 @@
+Parallel version,#Thread,8,Simple,Reduced,0.336225,0.176419
+Parallel version,#Thread,8,Simple,Reduced,0.335379,0.178588
+Parallel version,#Thread,8,Simple,Reduced,0.334527,0.181447
+Parallel version,#Thread,8,Simple,Reduced,0.333212,0.183425
+Parallel version,#Thread,8,Simple,Reduced,0.334520,0.185875
+Parallel version,#Thread,8,Simple,Reduced,0.337816,0.185752
+Parallel version,#Thread,8,Simple,Reduced,0.375208,0.174650
+Parallel version,#Thread,8,Simple,Reduced,0.673230,0.131055

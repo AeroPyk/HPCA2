@@ -25,9 +25,17 @@ export OMP_NUM_THREADS=16
 srun -n 8 ./parallel_500.out > res-parallel_500-T16.txt
 srun -n 8 ./parallel_1000.out > res-parallel_1000-T16.txt
 
+export OMP_NUM_THREADS=20
+srun -n 8 ./parallel_500.out > res-parallel_500-T20.txt
+srun -n 8 ./parallel_1000.out > res-parallel_1000-T20.txt
+
 export OMP_NUM_THREADS=24
 srun -n 8 ./parallel_500.out > res-parallel_500-T24.txt
 srun -n 8 ./parallel_1000.out > res-parallel_1000-T24.txt
+
+export OMP_NUM_THREADS=28
+srun -n 8 ./parallel_500.out > res-parallel_500-T28.txt
+srun -n 8 ./parallel_1000.out > res-parallel_1000-T28.txt
 
 export OMP_NUM_THREADS=32
 srun -n 5 ./parallel_500.out > res-parallel_500-T32.txt
